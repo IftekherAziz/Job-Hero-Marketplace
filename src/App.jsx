@@ -1,14 +1,16 @@
-import { useState } from 'react'
-import './App.css'
+import React from 'react';
+import Header from './components/Header/Header';
+import { Outlet } from 'react-router-dom';
+import Footer from './components/Footer/Footer';
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <div className="App">
-      <h1>Vite + React</h1>    
+    <div>
+      <Header></Header>
+      <Outlet></Outlet>
+      <Footer></Footer>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
