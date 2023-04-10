@@ -55,7 +55,7 @@ Applied Job Page:
   - Right section: 
    - View details button
 ----------------------------------------------------------------
-Statisties Page:
+# Statisties Page: -Done
  - Create a new json data:
   - assignment_id
   - assignment_marks
