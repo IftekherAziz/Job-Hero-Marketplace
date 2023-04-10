@@ -11,7 +11,7 @@
 # Job Category Section: - Done
  - Add 4 category data. Design custom data using json.
 
-- Featured Jobs Section:
+# Featured Jobs Section:
  - Initially show 4 jobs information from custom json data.
   - logo
   - job_title    
@@ -26,7 +26,7 @@
 # 3. Footer: - Done
  - Same design as figma
 -------------------------------------------------------
-Job Details Page:
+# Job Details Page:
  - Load data from the data.json file: (Left Side)
   - job_description
   - job_responsibility
@@ -43,7 +43,7 @@ Job Details Page:
   - Address_icon + address
 - Apply Now Button: (When click on this button it will store data to the local storage and show this data in a different location called Applied Job).
 ----------------------------------------------------------------
-Applied Job Page:
+# Applied Job Page:
  - Show the appllied job data from the local storage:
   - Left section: logo
   - Middle section:: 
@@ -87,16 +87,15 @@ Bonus Marks:
  - Add live website link
  - Fix reload issues on live website
 
-By default show 4 data in landing page and when click on see all jobs show the all jobs from the data api.
+# By default show 4 data in landing page and when click on see all jobs show the all jobs from the data api.
 
-Show a dropdown button : filter applied jobs by filting
+# Show a dropdown button : filter applied jobs by filting
  - Remote
  - Onsite
  - Full Time
  - Part Time
 ----------------------------------------------------------------
-
-Optionally:
+# Optionally:
  - Add page title
 
 
