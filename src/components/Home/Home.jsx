@@ -18,7 +18,8 @@ const Home = () => {
   return (
     <>
       <HomeBanner></HomeBanner>
-      <div className="mx-auto max-w-7xl px-6 mb-20">
+      {/* Job Categories Start */}
+      <section className="mx-auto max-w-7xl px-6 mb-20">
         <div>
           <h1 className="text-center text-4xl font-bold pt-20 pb-5">
             Job Category List
@@ -33,8 +34,9 @@ const Home = () => {
             <Categories key={data.id} data={data}></Categories>
           ))}
         </div>
-      </div>
-      <div className="mx-auto max-w-7xl px-6 mb-20">
+      </section>
+      {/* Featured Jobs Start */}
+      <section className="mx-auto max-w-7xl px-6 mb-5">
         <div>
           <h1 className="text-center text-4xl font-bold pb-5">Featured Jobs</h1>
           <p className="text-center mb-10">
@@ -71,7 +73,7 @@ const Home = () => {
                 Remote
               </button>
             </div>
-            <button className="border my-5 view_details  text-white font-medium border-blue-400 rounded">
+            <button className="border mt-5 view_details  text-white font-medium border-blue-400 rounded">
               View Details
             </button>
           </div>
@@ -103,11 +105,17 @@ const Home = () => {
                 Remote
               </button>
             </div>
-            <button className="border my-5 view_details  text-white font-medium border-blue-400 rounded">
+            <button className="border mt-5 view_details  text-white font-medium border-blue-400 rounded">
               View Details
             </button>
           </div>
         </div>
+      </section>
+      {/* See All Jobs Button */}
+      <div className="mx-auto max-w-7xl px-6 mb-10 flex items-center">
+        <button className="mx-auto border my-5 my_btn  text-white font-medium border-blue-400 rounded">
+          See All Jobs
+        </button>
       </div>
     </>
   );
