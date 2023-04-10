@@ -11,10 +11,10 @@ const BlogPost = ({blog}) => {
             className="object-cover w-full max-h-40"
           />
           <div className="w-full p-4 bg-whit">
-            <p className="mb-2 text-xl font-medium text-gray-900">
+            <p className="mb-2 text-xl font-medium">
                 {title}
             </p>
-            <p className="font-light text-gray-700 text-md text-justify">
+            <p className=" text-gray-500 font-medium text-sm text-justify">
                 {content}
             </p>
           </div>

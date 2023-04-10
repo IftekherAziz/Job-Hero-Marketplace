@@ -7,7 +7,9 @@ const Home = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("/public/categories.json")
+    fetch(
+      "https://raw.githubusercontent.com/IftekherAziz/Module-57/main/public/categories.json"
+    )
       .then((res) => res.json())
       .then((data) => setData(data.job_categories));
   }, []);

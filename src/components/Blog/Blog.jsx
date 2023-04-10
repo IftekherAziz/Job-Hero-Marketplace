@@ -6,7 +6,9 @@ const Blog = () => {
     const [blogs, setBlogs] = useState([]);
 
     useEffect(() => {
-        fetch("/public/blogs.json")
+        fetch(
+          "https://raw.githubusercontent.com/IftekherAziz/Module-57/main/public/blogs.json"
+        )
           .then((res) => res.json())
           .then((data) => setBlogs(data.blog_posts));
     }, [])

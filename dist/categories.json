@@ -1,24 +1,28 @@
 {
   "job_categories": [
     {
-      "image_url": "https://ibb.co/0jD5t5F",
+      "id": 1,
+      "image_url": "https://raw.githubusercontent.com/IftekherAziz/Module-57/main/src/assets/Icons/account.png",
       "name": "Software Developer",
-      "quantity": 50
+      "quantity": "50 Jobs Available"
     },
     {
-      "image_url": "https://ibb.co/tX1yC1v",
+      "id": 2,
+      "image_url": "https://raw.githubusercontent.com/IftekherAziz/Module-57/main/src/assets/Icons/business.png",
       "name": "Data Analyst",
-      "quantity": 25
+      "quantity": "25 Jobs Available"
     },
     {
-      "image_url": "https://ibb.co/qmkKPt5",
+      "id": 3,
+      "image_url": "https://raw.githubusercontent.com/IftekherAziz/Module-57/main/src/assets/Icons/media.png",
       "name": "Marketing Manager",
-      "quantity": 10
+      "quantity": "10 Jobs Available"
     },
     {
-      "image_url": "https://ibb.co/pfdPjLg",
-      "name": "Customer Support Representative",
-      "quantity": 30
+      "id": 4,
+      "image_url": "https://raw.githubusercontent.com/IftekherAziz/Module-57/main/src/assets/Icons/chip.png",
+      "name": "Customer Support",
+      "quantity": "30 Jobs Available"
     }
   ]
 }
