@@ -8,6 +8,7 @@ import phoneIcon from "../../assets/Icons/phone.png";
 const JobDetails = () => {
   return (
     <section>
+      {/* Title Section */}
       <div className="custom_bg border-t">
         <div className="mx-auto max-w-7xl py-12 px-6 mb-10 ">
           <div>
@@ -17,6 +18,7 @@ const JobDetails = () => {
           </div>
         </div>
       </div>
+      {/* Job Details Section */}
       <div className="mx-auto max-w-7xl px-6 mb-10">
         <div className="flex gap-4">
           <div className="w-8/12 border p-6 ">

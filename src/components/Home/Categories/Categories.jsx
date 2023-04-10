@@ -4,6 +4,7 @@ const Categories = ({ data }) => {
   console.log(data);
   const { image_url, name, quantity } = data;
   return (
+    /* Category Section */
     <div className="">
       <div className="border p-10 bg-slate-50">
         <img className="bg-gray-200 p-2 rounded" src={image_url} alt="" />

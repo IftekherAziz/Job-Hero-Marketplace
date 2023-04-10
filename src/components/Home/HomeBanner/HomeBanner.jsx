@@ -4,6 +4,7 @@ import people from "../../../assets/All_Images/people.png";
 
 const HomeBanner = () => {
   return (
+    /* Home Banner Section */
     <div className="relative overflow-hidden custom_bg">
       <div className="pb-80 pt-16 sm:pb-40 sm:pt-24 lg:pb-48 lg:pt-40">
         <div className="relative mx-auto max-w-7xl px-6 sm:static sm:px-8">

@@ -75,6 +75,7 @@ const Statistics = () => {
   };
   return (
     <section>
+      {/* Title Section */}
       <div className="custom_bg border-t">
         <div className="mx-auto max-w-7xl py-12 px-6">
           <div>
@@ -82,6 +83,7 @@ const Statistics = () => {
           </div>
         </div>
       </div>
+      {/* Chart Section */}
       <div className="">
         <div className="mx-auto max-w-7xl pt-4 md:4 h-600">
           <ResponsiveContainer width="100%" aspect={2}>

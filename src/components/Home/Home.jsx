@@ -55,7 +55,7 @@ const Home = () => {
             <h1 className="text-md font-semibold pt-5">
               Technical Database Engineer
             </h1>
-            <p className="text-sm pt-3">Air BNB</p>
+            <p className="text-sm pt-3">Airbnb LLC</p>
             <div className="flex">
               <div className="flex py-5 mr-5">
                 <img className="h-5 w-5" src={locationIcon} alt="" />
@@ -87,7 +87,7 @@ const Home = () => {
             <h1 className="text-md font-semibold pt-5">
               Technical Database Engineer
             </h1>
-            <p className="text-sm pt-3">Air BNB</p>
+            <p className="text-sm pt-3">Airbnb LLC</p>
             <div className="flex">
               <div className="flex py-5 mr-5">
                 <img className="h-5 w-5" src={locationIcon} alt="" />
