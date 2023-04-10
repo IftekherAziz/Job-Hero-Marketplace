@@ -2,3 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+.custom_bg {
+    background-color: #F9F9FF;
+}
+
+.my_btn {
+    background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+    border-radius: 8px;
+    width: 134px;
+    height: 50px;
+    color:#F9F9FF
+}
+.text_color{
+    color:#7E90FE;
+}

@@ -1,11 +1,14 @@
-import React from 'react';
+import React from "react";
+import HomeBanner from "./HomeBanner/HomeBanner";
+import Categories from "./Categories/Categories";
 
 const Home = () => {
-    return (
-        <div>
-            <h2>Home Page</h2>
-        </div>
-    );
+  return (
+    <>
+      <HomeBanner></HomeBanner>
+      <Categories></Categories>
+    </>
+  );
 };
 
 export default Home;

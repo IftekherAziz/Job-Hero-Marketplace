@@ -13,14 +13,14 @@ const navigation = [
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
-    <header className=" bg-violet-50">
+    <header className="custom_bg">
       <nav
-        className="container mx-auto flex items-center justify-between p-6 lg:px-8"
+        className="container mx-auto  max-w-7xl flex items-center justify-between p-6  sm:px-8 md:px-8"
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
           <NavLink to="/" className="-m-1.5 p-1.5">
-            <h2 className="h-6 w-auto font-bold text-3xl text-indigo-400 ">
+            <h2 className="h-6 w-auto font-bold text-3xl">
               JobHero
             </h2>
           </NavLink>
@@ -52,7 +52,7 @@ const Header = () => {
           ))}
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <button className=" rounded-md bg-indigo-400 px-3 py-3 text-sm font-semibold text-white">
+          <button className=" rounded-md my_btn px-3 py-3 text-sm font-semibold text-white">
             <NavLink to="/">Start Applying</NavLink>
           </button>
         </div>
@@ -67,7 +67,7 @@ const Header = () => {
         <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <NavLink to="/" className="-m-1.5 p-1.5">
-              <h2 className="h-6 w-auto font-bold text-3xl text-indigo-400 ">
+              <h2 className="h-6 w-auto font-bold text-3xl ">
                 JobHero
               </h2>
             </NavLink>
