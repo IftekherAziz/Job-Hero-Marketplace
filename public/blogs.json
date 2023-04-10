@@ -2,21 +2,25 @@
   "blog_posts": [
     {
       "id": 1,
+      "image": "https://www.tailwind-kit.com/images/blog/1.jpg",
       "title": "When should we use context api?",
       "content": "Context API is a powerful tool in React for managing global state. It's particularly useful when you have components that need to access the same data but are not directly related. Examples include themes, user authentication, and language preferences. By using Context API, you can avoid prop drilling and make your code more modular and maintainable."
     },
     {
       "id": 2,
+      "image": "https://www.tailwind-kit.com/images/blog/2.jpg",
       "title": "What is a custom hook in react?",
       "content": "A custom hook in React is a JavaScript function that starts with the word 'use' and can call other hooks. Custom hooks allow you to reuse stateful logic across components, which helps to keep your code DRY and easier to maintain. Some examples of custom hooks include useLocalStorage, useInterval, and useFetch."
     },
     {
       "id": 3,
+      "image": "https://www.tailwind-kit.com/images/blog/3.jpg",
       "title": "What is useRef?",
       "content": "useRef is a hook in React that provides a way to store a mutable value that persists across renders. It's particularly useful for storing and accessing references to DOM elements, as well as for implementing custom logic for animations, scroll positions, and more. useRef returns a mutable object with a current property that you can assign values to and read from."
     },
     {
       "id": 4,
+      "image": "https://www.tailwind-kit.com/images/blog/4.jpg",
       "title": "What is useMemo?",
       "content": "useMemo is a hook in React that memoizes the result of a function call and only re-computes it when one of its dependencies has changed. This can be useful for expensive calculations that don't need to be run on every render, or for preventing unnecessary re-renders of child components. useMemo takes two arguments: the function to memoize and an array of dependencies that trigger re-computation when they change."
     }

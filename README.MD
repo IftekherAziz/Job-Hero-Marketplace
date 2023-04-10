@@ -1,14 +1,14 @@
 # Live Link: http://job-hero-ph.surge.sh/
 
 # Assignment Task: 
-1. Header:  
+# 1. Header:  - Done
  - Change name of logo
 
 2. Landing Page:
-- Banner Section : 
+# Banner Section : - Done
  - Should change text and image
 
-- Job Category Section: 
+# Job Category Section: - Done
  - Add 4 category data. Design custom data using json.
 
 - Featured Jobs Section:
@@ -23,7 +23,7 @@
 
 - Add a show more button.
 
-3. Footer:
+# 3. Footer: - Done
  - Same design as figma
 -------------------------------------------------------
 Job Details Page:
@@ -65,24 +65,24 @@ Statisties Page:
  - Show Tooltip
 
 ----------------------------------------------------------------
- 404 Page: 
+ # 404 Page: - Done
   - Deasign a 404 page 
 
 Bonus Marks:
 ----------------------------------------------------------------
-Blog Page:
+# Blog Page: - Done
  - Answer 4 questions:
   - 1. When should we use context api?
   - 2. What is a custom hook in react?
   - 3. What is useRef?
   - 4. What is useMemo?
 
-Homepage: 
+# Homepage: - Done
  - Mobile responsive
 
 10 Meaningfull commit message
 
-Create a readme.md file:
+# Create a readme.md file: - Processing
  - Write what i have done (features) using bullet points
  - Add live website link
  - Fix reload issues on live website
