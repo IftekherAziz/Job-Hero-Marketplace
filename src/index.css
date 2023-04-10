@@ -21,6 +21,10 @@
     color: #F9F9FF
 }
 
+.custom_btn_bg{
+    background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+}
+
 .text_color {
     color: #7E90FE;
 }

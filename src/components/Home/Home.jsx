@@ -2,7 +2,8 @@ import React from "react";
 import HomeBanner from "./HomeBanner/HomeBanner";
 import Categories from "./Categories/Categories";
 import { useState, useEffect } from "react";
-import { BeakerIcon } from "@heroicons/react/24/solid";
+import dollarIcon from "../../assets/Icons/dollar.png";
+import locationIcon from "../../assets/Icons/location.png";
 
 const Home = () => {
   const [data, setData] = useState([]);
@@ -22,11 +23,11 @@ const Home = () => {
       <section className="mx-auto max-w-7xl px-6 mb-20">
         <div>
           <h1 className="text-center text-4xl font-bold pt-20 pb-5">
-            Job Category List
+            Career Directory
           </h1>
           <p className="text-center mb-10">
-            Explore thousands of job opportunities with all the information you
-            need. Its your future
+            Discover a vast array of job openings complete with comprehensive
+            details to help you make informed decisions.
           </p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -57,12 +58,12 @@ const Home = () => {
             <p className="text-sm pt-3">Air BNB</p>
             <div className="flex">
               <div className="flex py-5 mr-5">
-                <BeakerIcon className="h-5 w-5" />
+                <img className="h-5 w-5" src={locationIcon} alt="" />
                 <p className="ml-2 text-sm">Dhaka, Bangladesh</p>
               </div>
               <div className="flex py-5">
-                <BeakerIcon className="h-5 w-5" />
-                <p className="ml-2 text-sm">Dhaka, Bangladesh</p>
+                <img className="h-5 w-5" src={dollarIcon} alt="" />
+                <p className="ml-2 text-sm">Salary : 100K - 150K</p>
               </div>
             </div>
             <div className="flex">
@@ -89,12 +90,12 @@ const Home = () => {
             <p className="text-sm pt-3">Air BNB</p>
             <div className="flex">
               <div className="flex py-5 mr-5">
-                <BeakerIcon className="h-5 w-5" />
+                <img className="h-5 w-5" src={locationIcon} alt="" />
                 <p className="ml-2 text-sm">Dhaka, Bangladesh</p>
               </div>
               <div className="flex py-5">
-                <BeakerIcon className="h-5 w-5" />
-                <p className="ml-2 text-sm">Dhaka, Bangladesh</p>
+                <img className="h-5 w-5" src={dollarIcon} alt="" />
+                <p className="ml-2 text-sm">Salary : 100K - 150K</p>
               </div>
             </div>
             <div className="flex">

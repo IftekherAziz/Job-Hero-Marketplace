@@ -74,35 +74,44 @@ const Statistics = () => {
     lineHeight: "48px",
   };
   return (
-    <div className="bg-slate-50 border-t">
-      <div className="mx-auto max-w-7xl pt-4 md:4 h-600">
-        <ResponsiveContainer width="100%" aspect={2}>
-          <RadialBarChart
-            cx="50%"
-            cy="50%"
-            innerRadius="10%"
-            outerRadius="80%"
-            barSize={20}
-            data={assignments}
-          >
-            <RadialBar
-              minAngle={15}
-              label={{ position: "insideStart", fill: "#f43f5e" }}
-              background
-              clockWise
-              dataKey="gotMark"
-            />
-            <Tooltip />
-            <Legend
-              iconSize={50}
-              layout="vertical"
-              verticalAlign="middle"
-              wrapperStyle={style}
-            />
-          </RadialBarChart>
-        </ResponsiveContainer>
+    <section>
+      <div className="custom_bg border-t">
+        <div className="mx-auto max-w-7xl py-12 px-6">
+          <div>
+            <h1 className="font-bold text-xl text-center py-12">Statistics</h1>
+          </div>
+        </div>
       </div>
-    </div>
+      <div className="">
+        <div className="mx-auto max-w-7xl pt-4 md:4 h-600">
+          <ResponsiveContainer width="100%" aspect={2}>
+            <RadialBarChart
+              cx="50%"
+              cy="50%"
+              innerRadius="10%"
+              outerRadius="80%"
+              barSize={20}
+              data={assignments}
+            >
+              <RadialBar
+                minAngle={15}
+                label={{ position: "insideStart", fill: "#f43f5e" }}
+                background
+                clockWise
+                dataKey="gotMark"
+              />
+              <Tooltip />
+              <Legend
+                iconSize={50}
+                layout="vertical"
+                verticalAlign="middle"
+                wrapperStyle={style}
+              />
+            </RadialBarChart>
+          </ResponsiveContainer>
+        </div>
+      </div>
+    </section>
   );
 };
 

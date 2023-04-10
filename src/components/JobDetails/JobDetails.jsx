@@ -1,4 +1,9 @@
 import React from "react";
+import dollarIcon from "../../assets/Icons/dollar.png";
+import locationIcon from "../../assets/Icons/location.png";
+import jobIcon from "../../assets/Icons/job.png";
+import emilIcon from "../../assets/Icons/email.png";
+import phoneIcon from "../../assets/Icons/phone.png";
 
 const JobDetails = () => {
   return (
@@ -6,7 +11,7 @@ const JobDetails = () => {
       <div className="custom_bg border-t">
         <div className="mx-auto max-w-7xl py-12 px-6 mb-10 ">
           <div>
-            <h1 className="font-semibold text-2xl text-center py-12">
+            <h1 className="font-bold text-xl text-center py-12">
               Job Details
             </h1>
           </div>
@@ -42,8 +47,44 @@ const JobDetails = () => {
               <p className="py-3 text-sm">2-3 Years in this field.</p>
             </p>
           </div>
-          <div className="w-4/12 border p-6 custom_bg rounded-md">
-            <p className="py-3 text-md font-semibold border-b">Job Details</p>
+          <div className="w-4/12 ">
+            <div className="border p-6 custom_bg rounded-md">
+              <p className="py-3 text-sm font-semibold border-b">Job Details</p>
+              <div className="flex pt-8 pb-2">
+                <img className="h-4 w-4" src={dollarIcon} alt="" />
+                <p className="ml-2 text-xs">
+                  <b>Salary</b> : 100K - 150K (Per Month)
+                </p>
+              </div>
+              <div className="flex py-2">
+                <img className="h-4 w-4" src={jobIcon} alt="" />
+                <p className="ml-2 text-xs">
+                  <b>Job Title </b>: Product Designer
+                </p>
+              </div>
+              <p className="pt-8 pb-3 text-sm font-semibold border-b">
+                Contact Information
+              </p>
+              <div className="flex pt-8 pb-2">
+                <img className="h-4 w-4" src={phoneIcon} alt="" />
+                <p className="ml-2 text-xs">
+                  <b>Phone</b>: 01750-00 00 00
+                </p>
+              </div>
+              <div className="flex py-2">
+                <img className="h-4 w-4" src={emilIcon} alt="" />
+                <p className="ml-2 text-xs">
+                  <b>Email</b>: info@gmail.com
+                </p>
+              </div>
+              <div className="flex py-2">
+                <img className="h-4 w-4" src={locationIcon} alt="" />
+                <p className="ml-2 text-xs">
+                  <b> Address</b>: Dhanmondi 32, Sukrabad Dhaka, Bangladesh
+                </p>
+              </div>
+            </div>
+            <button className="custom_btn_bg w-full rounded-md py-2 mt-5 text-white">Apply Now</button>
           </div>
         </div>
       </div>
