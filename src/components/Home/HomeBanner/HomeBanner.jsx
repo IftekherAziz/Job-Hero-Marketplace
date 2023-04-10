@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import people from "../../../assets/All_Images/people.png";
 
 const HomeBanner = () => {
   return (
@@ -8,10 +9,9 @@ const HomeBanner = () => {
         <div className="relative mx-auto max-w-7xl px-6 sm:static sm:px-8">
           <div className="sm:max-w-lg">
             <h1 className="font text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-              <span>
-                {" "}
+              <span>        
                 Take the Next <br /> Leap Towards
-              </span>{" "}
+              </span>
               <br />
               <span className="text_color"> Your Career</span>
             </h1>
@@ -25,7 +25,7 @@ const HomeBanner = () => {
             <div className="mt-10">
               <div className="absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8">
                 <div>
-                  <img src="/src/assets/All_Images/people.png" alt="" />
+                  <img src={people} alt="" />
                 </div>
               </div>
               <Link
