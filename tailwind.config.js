@@ -1,8 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 
+// tailwind.config.js
 const defaultTheme = require('tailwindcss/defaultTheme')
 
-module.exports = {
+export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -13,6 +14,7 @@ module.exports = {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
       },
     },
-    plugins: [],
   },
+  plugins: [require("daisyui")],
 }
+

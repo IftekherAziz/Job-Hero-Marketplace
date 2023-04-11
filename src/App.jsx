@@ -1,18 +1,18 @@
-import React from "react";
-import Header from "./components/Header/Header";
-import { Outlet } from "react-router-dom";
-import Footer from "./components/Footer/Footer";
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
 
-const App = () => {
+function App() {
+  const [count, setCount] = useState(0)
+
   return (
-    <>
-      <Header></Header>
-      <div className="md:min-h-[calc(100vh-341px)]">
-        <Outlet></Outlet>
-      </div>
-      <Footer></Footer>
-    </>
-  );
-};
+    <div className="App">
+      <h1 className="text-5xl font-bold underline">
+        Hello world!
+      </h1>
+    </div>
+  )
+}
 
-export default App;
+export default App

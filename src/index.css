@@ -2,39 +2,78 @@
 @tailwind components;
 @tailwind utilities;
 
+.job-container {
+  @apply px-4 md:px-56 py-2 md:py-4 bg-indigo-50;
+}
+.home-container {
+  @apply px-4 md:px-56 pt-2 md:pt-4 bg-indigo-50;
+}
+
+.category-container {
+  @apply px-4 md:px-64 pt-2 md:pt-4;
+}
+.details-container {
+  @apply px-4 md:px-64 pt-2 md:pt-4;
+}
+
+.header {
+  @apply py-2 md:py-0 md:p-8 rounded-lg
+}
+
+.nav-link {
+  @apply text-sm font-bold;
+}
+
+.nav-link-inactive {
+  @apply text-sm text-blue-700 font-bold;
+}
+
+.job-btn {
+  @apply mt-5 btn btn-primary bg-gradient-to-r from-blue-600 to-indigo-500 text-white rounded-md
+}
+
+.job-details-btn {
+  @apply mt-5 py-1 w-2/6 bg-gradient-to-r from-blue-600 to-indigo-500 text-white rounded-md
+}
+
+
+
+
+/* Custom bg */
 .custom_bg {
-    background-color: #F9F9FF;
+  background-color: #F9F9FF;
 }
 
 .my_btn {
-    background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
-    border-radius: 8px;
-    width: 134px;
-    height: 50px;
-    color: #F9F9FF
-}
-.view_details {
-    background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
-    border-radius: 4px;
-    width: 134px;
-    height: 40px;
-    color: #F9F9FF
+  background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+  border-radius: 8px;
+  width: 134px;
+  height: 50px;
+  color: #F9F9FF
 }
 
-.custom_btn_bg{
-    background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+.view_details {
+  background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+  border-radius: 4px;
+  width: 134px;
+  height: 40px;
+  color: #F9F9FF
+}
+
+.custom_btn_bg {
+  background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
 }
 
 .text_color {
-    color: #7E90FE;
+  color: #7E90FE;
 }
 
 .footer_bg {
-    background-color: #191919;
+  background-color: #191919;
 }
 
 @media screen and (max-width: 1024px) {
-    .recharts-legend-wrapper {
-        display: none;
-    }
+  .recharts-legend-wrapper {
+    display: none;
+  }
 }

@@ -6,8 +6,8 @@ import { Link, NavLink } from "react-router-dom";
 const navigation = [
   { name: "Home", href: "/" },
   { name: "Statistics", href: "/statistics" },
-  { name: "Applied Job", href: "/applied-job/" },
-  { name: "Blog", href: "/blog" },
+  { name: "Applied Job", href: "/applied" },
+  { name: "Blog", href: "/blogs" },
 ];
 
 const Header = () => {
@@ -20,9 +20,7 @@ const Header = () => {
       >
         <div className="flex lg:flex-1">
           <NavLink to="/" className="-m-1.5 p-1.5">
-            <h2 className="h-6 w-auto font-bold text-3xl">
-              JobHero
-            </h2>
+            <h2 className="h-6 w-auto font-bold text-3xl">JobHero</h2>
           </NavLink>
         </div>
         <div className="flex lg:hidden">
@@ -67,9 +65,7 @@ const Header = () => {
         <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <NavLink to="/" className="-m-1.5 p-1.5">
-              <h2 className="h-6 w-auto font-bold text-3xl ">
-                JobHero
-              </h2>
+              <h2 className="h-6 w-auto font-bold text-3xl ">JobHero</h2>
             </NavLink>
             <button
               type="button"

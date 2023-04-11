@@ -156,7 +156,7 @@ const Footer = () => {
           </ul>
           <div className="border-t py-10 flex justify-between">
             <p className="text-xs">@2023 Job Hero. All Rights Reserved</p>
-            <p className="text-xs">Powered by Job Hero</p>
+            <p className="text-xs">Developed By Iftekher Aziz</p>
           </div>
         </div>
       </footer>

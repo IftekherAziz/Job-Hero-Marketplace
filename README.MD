@@ -1,6 +1,8 @@
 # Live Link: http://job-hero-ph.surge.sh/
+-----------------------------------------------------
 
-# Assignment Task: 
+# Assignment Workflow: 
+-----------------------------------------------------
 # 1. Header:  - Done
  - Change name of logo
 
@@ -11,7 +13,7 @@
 # Job Category Section: - Done
  - Add 4 category data. Design custom data using json.
 
-# Featured Jobs Section:
+# Featured Jobs Section: Done
  - Initially show 4 jobs information from custom json data.
   - logo
   - job_title    
@@ -26,7 +28,7 @@
 # 3. Footer: - Done
  - Same design as figma
 -------------------------------------------------------
-# Job Details Page:
+# Job Details Page: Done
  - Load data from the data.json file: (Left Side)
   - job_description
   - job_responsibility
@@ -43,7 +45,7 @@
   - Address_icon + address
 - Apply Now Button: (When click on this button it will store data to the local storage and show this data in a different location called Applied Job).
 ----------------------------------------------------------------
-# Applied Job Page:
+# Applied Job Page: Done
  - Show the appllied job data from the local storage:
   - Left section: logo
   - Middle section:: 
@@ -80,22 +82,22 @@ Bonus Marks:
 # Homepage: - Done
  - Mobile responsive
 
-10 Meaningfull commit message
+# 10 Meaningfull commit message -Done
 
 # Create a readme.md file: - Processing
  - Write what i have done (features) using bullet points
  - Add live website link
  - Fix reload issues on live website
 
-# By default show 4 data in landing page and when click on see all jobs show the all jobs from the data api.
+# By default show 4 data in landing page and when click on see all jobs show the all jobs from the data api - Done
 
-# Show a dropdown button : filter applied jobs by filting
+# Show a dropdown button or button : filter applied jobs by filting - Done
  - Remote
  - Onsite
  - Full Time
  - Part Time
 ----------------------------------------------------------------
-# Optionally:
+# Optionally: - Done
  - Add page title
 
 
