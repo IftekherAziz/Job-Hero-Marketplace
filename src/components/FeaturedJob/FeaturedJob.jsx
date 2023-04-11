@@ -7,7 +7,7 @@ const FeaturedJob = ({ showedJob }) => {
   return (
     <section className='bg-white'>
       <div className="border p-8 rounded">
-        <img className="mb-2 border rounded" src={logo} alt="Company Logo" />
+        <img className="mb-2 border rounded p-3" src={logo} alt="Company Logo" />
         <h1 className="text-md font-semibold pt-5">{job_title}</h1>
         <p className="text-sm pt-3">{company_name}</p>
         <div className="flex">

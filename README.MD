@@ -1,75 +1,49 @@
-# Live Link: http://job-hero-ph.surge.sh/
+# Live Link: http://
+/
 -----------------------------------------------------
 
 # Assignment Workflow: 
 -----------------------------------------------------
 # 1. Header:  - Done
  - Change name of logo
-
+-----------------------------------------------------
 2. Landing Page:
 # Banner Section : - Done
- - Should change text and image
-
+ - Change text
+-----------------------------------------------------
 # Job Category Section: - Done
  - Add 4 category data. Design custom data using json.
-
+-----------------------------------------------------
 # Featured Jobs Section: Done
  - Initially show 4 jobs information from custom json data.
-  - logo
-  - job_title    
-  - company_name
-  - job_type [Remote, Full Time]
-  - location
-  - salary
  - View Deatils Button: (When click on this button show details about this job on a different route called job-details)
-
-- Add a show more button.
-
+ - Add a show more button.
+-----------------------------------------------------
 # 3. Footer: - Done
  - Same design as figma
 -------------------------------------------------------
 # Job Details Page: Done
- - Load data from the data.json file: (Left Side)
-  - job_description
-  - job_responsibility
-  - educational_requirements
-  - experiences
-
-- Load data from the data.json file (Right Side)
- - Job Deatils:
-  - Salaey_icon + salary
-  - Job Title_icon + job_title
- - Contact Information:
-  - Phone_icon + phone_number
-  - Email_icon + email_address
-  - Address_icon + address
-- Apply Now Button: (When click on this button it will store data to the local storage and show this data in a different location called Applied Job).
+ - Load data from the job.json file: (Left Side)
+ - Load data from the job.json file (Right Side)
+  - Job Deatils:
+  - Contact Information:
+ - Apply Now Button: (When click on this button it will store data to the local storage and show this data in a different location called Applied).
 ----------------------------------------------------------------
 # Applied Job Page: Done
  - Show the appllied job data from the local storage:
   - Left section: logo
-  - Middle section:: 
-   - job_title
-   - company_name
-   - job_type [Remote, Full Time]
-   - location 
-   - salary
+  - Middle section: Data
   - Right section: 
    - View details button
 ----------------------------------------------------------------
 # Statisties Page: -Done
- - Create a new json data:
-  - assignment_id
-  - assignment_marks
-  - assignment_name
  - Deasign a chart : (Without line or bar charts)
- - Show X & Y axis
+ - Show X or Y axis
  - Show Tooltip
-
 ----------------------------------------------------------------
  # 404 Page: - Done
   - Deasign a 404 page 
-
+----------------------------------------------------------------
 Bonus Marks:
 ----------------------------------------------------------------
 # Blog Page: - Done
@@ -78,24 +52,22 @@ Bonus Marks:
   - 2. What is a custom hook in react?
   - 3. What is useRef?
   - 4. What is useMemo?
-
+----------------------------------------------------------------
 # Homepage: - Done
  - Mobile responsive
-
+----------------------------------------------------------------
 # 10 Meaningfull commit message -Done
-
-# Create a readme.md file: - Processing
+----------------------------------------------------------------
+# Create a readme.md file: - Done
  - Write what i have done (features) using bullet points
  - Add live website link
  - Fix reload issues on live website
-
+----------------------------------------------------------------
 # By default show 4 data in landing page and when click on see all jobs show the all jobs from the data api - Done
-
+----------------------------------------------------------------
 # Show a dropdown button or button : filter applied jobs by filting - Done
  - Remote
  - Onsite
- - Full Time
- - Part Time
 ----------------------------------------------------------------
 # Optionally: - Done
  - Add page title

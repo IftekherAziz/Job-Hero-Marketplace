@@ -15,9 +15,9 @@ const AppliedJob = ({ shownJob }) => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-5 mt-3 bg-white rounded-md gap-y-4 md:gap-y-0 md:gap-4 border drop-shadow-sm p-3 md:p-5">
       <div className="col-span-1 min-h-[25vh] flex justify-center items-center bg-white rounded-md">
-        <img className="w-full h-full object-contain border px-8" src={logo} alt="Logo" />
+        <img className="w-full h-full object-contain border px-6" src={logo} alt="Logo" />
       </div>
-      <div className="col-span-3 flex flex-col pt-5">
+      <div className="col-span-3 flex flex-col pt-5 pl-8">
         <p className="font-semibold text-md">{job_title}</p>
         <p className="text-gray-700 text-sm my-2">{company_name}</p>
         <div className="flex gap-2 ">
@@ -47,7 +47,7 @@ const AppliedJob = ({ shownJob }) => {
           </div>
         </div>
       </div>
-      <div className="col-span-1 flex justify-center items-center">
+      <div className="col-span-1 flex justify-center items-center pb-6">
         <div>
           <Link to={`/job-details/${id}`}>
             <button className="border custom_btn_bg px-3 py-2 text-white font-sm border-blue-400 rounded">
