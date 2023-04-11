@@ -1,6 +1,5 @@
 import React from 'react';
-import dollarIcon from "../../assets/Icons/dollar.png";
-import locationIcon from "../../assets/Icons/location.png";
+
 
 const AppliedJob = () => {
     return (
@@ -17,11 +16,21 @@ const AppliedJob = () => {
         </div>
         {/* Applied Job Section */}
         <div className="mx-auto max-w-7xl px-6 mb-20">
+          <div className="flex mb-5">
+            <div className="flex justify-end w-full">
+              <select className="border bg-slate-100 border-gray-300 rounded ml-2 p-2">
+                <option value="all">Filter By</option>
+                <option value="fulltime">Full Time</option>
+                <option value="parttime">Part Time</option>
+                <option value="remote">Remote</option>
+              </select>
+            </div>
+          </div>
           <div className="flex border p-6 gap-4 rounded">
             <div className="w-3/12">
               <img
                 className="w-full h-48 rounded bg-slate-100"
-                src="https://raw.githubusercontent.com/IftekherAziz/Module-57/main/src/assets/images/airbnb.png"
+                src="https://i.ibb.co/p4QtYKy/airbnb.png"
                 alt=""
               />
             </div>
@@ -39,11 +48,19 @@ const AppliedJob = () => {
                 </div>
                 <div className="flex">
                   <div className="flex py-5 mr-5">
-                    <img className="h-5 w-5" src={locationIcon} alt="" />
+                    <img
+                      className="h-5 w-5"
+                      src="https://i.ibb.co/HDSnmVM/Location-Icon.png"
+                      alt=""
+                    />
                     <p className="ml-2 text-xs">Dhaka, Bangladesh</p>
                   </div>
                   <div className="flex py-5">
-                    <img className="h-5 w-5" src={dollarIcon} alt="" />
+                    <img
+                      className="h-5 w-5"
+                      src="https://i.ibb.co/8gPKz7h/dollar.png"
+                      alt=""
+                    />
                     <p className="ml-2 text-xs">Salary: 100K-150K</p>
                   </div>
                 </div>
