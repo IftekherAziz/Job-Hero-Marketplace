@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App'
 import './index.css'
 import {
   createBrowserRouter,
@@ -17,36 +16,36 @@ import JobDetails from './components/JobDetails/JobDetails';
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: "/",
     element: <Main></Main>,
     errorElement: <Error></Error>,
     children: [
       {
-        path: '/',
+        path: "/",
         element: <Home></Home>,
-        loader: jobsLoader
+        loader: jobsLoader,
       },
       {
-        path: 'statistics',
-        element: <Statistics></Statistics>
+        path: "statistics",
+        element: <Statistics></Statistics>,
       },
       {
-        path: 'applied',
+        path: "applied",
         element: <AppliedJobs></AppliedJobs>,
-        loader: jobsLoader
+        loader: jobsLoader,
       },
       {
-        path: 'blogs',
-        element: <Blogs></Blogs>
+        path: "blogs",
+        element: <Blogs></Blogs>,
       },
       {
-        path: 'job-details/:jobId',
+        path: "job-details/:jobId",
         element: <JobDetails></JobDetails>,
-        loader: ({params}) => jobDetailsLoader(params.jobId)
+        loader: ({ params }) => jobDetailsLoader(params.jobId),
       },
-    ]
-  }
-])
+    ],
+  },
+]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

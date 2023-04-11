@@ -1,13 +1,12 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
-import { MapPinIcon, CurrencyBangladeshiIcon, BriefcaseIcon, PhoneIcon, AtSymbolIcon } from '@heroicons/react/24/solid';
 import { addToDb, getAppliedList } from '../Utilities/Fakedb';
 import { AppliedJobContext } from '../Layout/Main';
 import toast from 'react-hot-toast';
 
 const JobDetails = () => {
   const job = useLoaderData();
-  const { id, job_title, location, salary, job_description, job_responsibility, educational_requirements, experiences, contact_information } = job;
+  const { id, job_title, address, salary, job_description, job_responsibility, educational_requirements, experiences, contact_information } = job;
   const [appliedJobs, setAppliedJobs] = useContext(AppliedJobContext);
 
   const addAppliedJobs = () => {
@@ -41,17 +40,19 @@ const JobDetails = () => {
         <div className="flex gap-4">
           <div className="w-8/12 border p-6 bg-white ">
             <p className="py-3 text-sm">
-              <span>Job Description:</span> {job_description}
+              <span className="font-bold">Job Description:</span>{" "}
+              {job_description}
             </p>
             <p className="py-3 text-sm">
-              <span>Job Responsibility:</span> {job_responsibility}
+              <span className="font-bold">Job Responsibility:</span>{" "}
+              {job_responsibility}
             </p>
             <div className="py-3 text-sm">
-              <p className="font-medium">Educational Requirements:</p>
+              <p className="font-bold">Educational Requirements:</p>
               <p className="py-3 text-sm">{educational_requirements}</p>
             </div>
             <div className="py-3 text-sm">
-              <p className="font-medium">Experiences:</p>
+              <p className="font-bold">Experiences:</p>
               <p className="py-3 text-sm">{experiences}</p>
             </div>
           </div>
@@ -65,7 +66,8 @@ const JobDetails = () => {
                   alt=""
                 />
                 <p className="ml-2 text-xs">
-                  <span>Salary</span> : {salary} (per year)
+                  <span className="font-bold">Salary</span> : {salary} (per
+                  year)
                 </p>
               </div>
               <div className="flex py-2">
@@ -75,20 +77,21 @@ const JobDetails = () => {
                   alt=""
                 />
                 <p className="ml-2 text-xs">
-                  <b>Job Title </b>: {job_title}
+                  <span className="font-bold">Job Title </span>: {job_title}
                 </p>
               </div>
-              <p className="pt-8 pb-3 text-sm font-semibold border-b">
+              <p className="pt-5 pb-3 text-sm font-semibold border-b">
                 Contact Information
               </p>
-              <div className="flex pt-8 pb-2">
+              <div className="flex pt-5 pb-2">
                 <img
                   className="h-4 w-4"
                   src="https://i.ibb.co/X3jpQPK/call.png"
                   alt=""
                 />
                 <p className="ml-2 text-xs">
-                  <span>Phone</span>: {contact_information[0].phone}
+                  <span className="font-bold">Phone</span>:{" "}
+                  {contact_information[0].phone}
                 </p>
               </div>
               <div className="flex py-2">
@@ -98,7 +101,8 @@ const JobDetails = () => {
                   alt=""
                 />
                 <p className="ml-2 text-xs">
-                  <span>Email</span>: {contact_information[0].email}
+                  <span className="font-bold">Email</span>:{" "}
+                  {contact_information[0].email}
                 </p>
               </div>
               <div className="flex py-2">
@@ -108,7 +112,8 @@ const JobDetails = () => {
                   alt=""
                 />
                 <p className="ml-2 text-xs">
-                  <span> Address</span>: {contact_information[0].location}
+                  <span className="font-bold"> Address</span>:{" "}
+                  {contact_information[0].address}
                 </p>
               </div>
             </div>

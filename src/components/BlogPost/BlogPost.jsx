@@ -3,7 +3,7 @@ import React from "react";
 const BlogPost = ({ blog }) => {
   const { image, title, content } = blog;
   return (
-    <div className="m-auto overflow-hidden rounded-lg shadow-lg cursor-pointer h-full w-96">
+    <div className="m-auto overflow-hidden rounded-md shadow-lg cursor-pointer h-full w-96 bg-white">
       <a href="#" className="block w-full h-full">
         <img
           alt="blog photo"

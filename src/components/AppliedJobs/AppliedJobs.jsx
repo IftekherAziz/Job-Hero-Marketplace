@@ -2,7 +2,6 @@ import React, { useContext, useEffect, useState } from "react";
 import { AppliedJobContext, AvailableJobContext } from "../Layout/Main";
 import { getAppliedList } from "../Utilities/Fakedb";
 import { useLoaderData } from "react-router-dom";
-import Banner from "../Banner/Banner";
 import AppliedJob from "../AppliedJob/AppliedJob";
 
 const AppliedJobs = () => {
@@ -53,28 +52,46 @@ const AppliedJobs = () => {
   }, [viewType, appliedJobs, availableJobs]);
 
   return (
-    <div>
-      <Banner>Applied Jobs</Banner>
-      <div className="flex flex-col gap-3 details-container mt-5 md:mt-10">
-        <div className="flex justify-center md:justify-end gap-2">
-          <button
-            onClick={() => {
-              setRemoteJob(!remoteJob);
-              onSiteJob ? setOnSiteJob(!onSiteJob) : "";
-            }}
-            className={remoteJob ? "applied-job-btn-active" : "applied-job-btn"}
-          >
-            Remote Jobs
-          </button>
-          <button
-            onClick={() => {
-              setOnSiteJob(!onSiteJob);
-              remoteJob ? setRemoteJob(!remoteJob) : "";
-            }}
-            className={onSiteJob ? "applied-job-btn-active" : "applied-job-btn"}
-          >
-            Onsite Jobs
-          </button>
+    <section>
+      {/* Title Section */}
+      <div className="custom_bg border-t">
+        <div className="mx-auto max-w-7xl py-12 px-6 mb-10 ">
+          <div>
+            <h1 className="font-bold text-xl text-center py-12">
+              Applied Jobs
+            </h1>
+          </div>
+        </div>
+      </div>
+      {/* Applied Jobs Section */}
+      <div className="mx-auto max-w-7xl px-6 mb-20">
+        <div className="flex justify-center md:justify-end gap-4 mb-5">
+          <div className="p-2 border view_details text-center">
+            <button
+              onClick={() => {
+                setRemoteJob(!remoteJob);
+                onSiteJob ? setOnSiteJob(!onSiteJob) : "";
+              }}
+              className={
+                remoteJob ? "applied-job-btn-active" : "applied-job-btn"
+              }
+            >
+              Remote Jobs
+            </button>
+          </div>
+          <div className="p-2 border view_details text-center">
+            <button
+              onClick={() => {
+                setOnSiteJob(!onSiteJob);
+                remoteJob ? setRemoteJob(!remoteJob) : "";
+              }}
+              className={
+                onSiteJob ? "applied-job-btn-active" : "applied-job-btn"
+              }
+            >
+              Onsite Jobs
+            </button>
+          </div>
         </div>
         <div className="flex flex-col gap-3">
           {shownJobs.length > 0 ? (
@@ -83,12 +100,12 @@ const AppliedJobs = () => {
             ))
           ) : (
             <div className="mx-auto mt-[10vh] border text-indigo-500 border-indigo-700 drop-shadow-sm p-5 rounded-md">
-              <p>No applications are available</p>
+              <p>You have not applied any job yet.</p>
             </div>
           )}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
