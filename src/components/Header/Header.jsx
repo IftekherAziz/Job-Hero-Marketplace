@@ -7,7 +7,7 @@ const navigation = [
   { name: "Home", href: "/" },
   { name: "Statistics", href: "/statistics" },
   { name: "Applied Job", href: "/applied" },
-  { name: "Blog", href: "/blogs" },
+  { name: "Blog", href: "/blog" },
 ];
 
 const Header = () => {

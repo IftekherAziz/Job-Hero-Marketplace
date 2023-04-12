@@ -3,13 +3,23 @@ import { useState } from "react";
 import BlogPost from "../BlogPost/BlogPost";
 
 const Blog = () => {
+
   const [blogs, setBlogs] = useState([]);
 
-  useEffect(() => {
-    fetch("blogs.json")
-      .then((res) => res.json())
-      .then((data) => setBlogs(data.blog_posts));
-  }, []);
+   const blogLoaders = async () => {
+     const res = await fetch("blogs.json");
+     const data = await res.json();
+     return data.blog_posts;
+   };
+
+   useEffect(() => {
+     const loadBlogs = async () => {
+       const categoryData = await blogLoaders();
+       setBlogs(categoryData);
+     };
+     loadBlogs();
+   }, []);
+
 
   return (
     <section>
