@@ -4,19 +4,19 @@
       "id": 1,
       "image": "https://i.ibb.co/RGnfGYG/joshua-aragon-FGXqbqb-Gt5o-unsplash.jpg",
       "title": "When should we use context api?",
-      "content": "Context API is a powerful tool in React for managing global state. It's particularly useful when you have components that need to access the same data but are not directly related. Examples include themes, user authentication, and language preferences. By using Context API, you can avoid prop drilling and make your code more modular and maintainable."
+      "content": "Context API is a powerful tool in React for managing global state. It's particularly useful when we have components that need to access the same data but are not directly related. Examples include themes, user authentication, and language preferences. By using Context API, we can avoid prop drilling and make our code more modular and maintainable."
     },
     {
       "id": 2,
       "image": "https://i.ibb.co/ZHzd6Rb/safar-safarov-MSN8-TFh-J0is-unsplash.jpg",
       "title": "What is a custom hook in react?",
-      "content": "A custom hook in React is a JavaScript function that starts with the word 'use' and can call other hooks. Custom hooks allow you to reuse stateful logic across components, which helps to keep your code DRY and easier to maintain. Some examples of custom hooks include useLocalStorage, useInterval, and useFetch."
+      "content": "A custom hook in React is a JavaScript function that starts with the word 'use' and can call other hooks. Custom hooks allow us to reuse stateful logic across components, which helps to keep our code DRY and easier to maintain. Some examples of custom hooks include useLocalStorage, useInterval, and useFetch."
     },
     {
       "id": 3,
       "image": "https://i.ibb.co/SVRpH7k/lautaro-andreani-xk-Baqlcqeb4-unsplash.jpg",
       "title": "What is useRef?",
-      "content": "useRef is a hook in React that provides a way to store a mutable value that persists across renders. It's particularly useful for storing and accessing references to DOM elements, as well as for implementing custom logic for animations, scroll positions, and more. useRef returns a mutable object with a current property that you can assign values to and read from."
+      "content": "useRef is a hook in React that provides a way to store a mutable value that persists across renders. It's particularly useful for storing and accessing references to DOM elements, as well as for implementing custom logic for animations, scroll positions, and more. useRef returns a mutable object with a current property that we can assign values to and read from."
     },
     {
       "id": 4,
